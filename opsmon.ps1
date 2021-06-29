@@ -1,7 +1,5 @@
 cd $PSScriptRoot
 
-Start-Sleep -S 60
-
 Function Invoke-SQLQuery {
     param (
     $Config,
@@ -183,3 +181,5 @@ WHERE id='[ID]'
     $AlertUpdate = $AlertUpdate.Replace("[DEDUPKEY]","")
     Invoke-SQLQuery -Config $Config -Query $AlertUpdate
 }
+
+Start-Sleep -S 60
