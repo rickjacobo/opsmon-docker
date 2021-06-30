@@ -136,7 +136,7 @@ UPDATE [TABLE]
 SET alert ='[ALERT]', lastupdate_utc='[LASTUPDATE]', pagerduty_dedup='[DEDUPKEY]'
 WHERE id='[ID]'
 "@
-    $Alert_message = "Unavailable: $Hostname - $Type $Port - $Date UTC"
+    $Alert_message = "Unavailable: $Hostname $Port - $Date UTC"
     Write-Host $Alert_message
     #$AlertEndpoint = "$NotificationEndpoint$Alert_message"
     #Invoke-WebRequest $AlertEndpoint
@@ -168,7 +168,7 @@ UPDATE [TABLE]
 SET alert ='[ALERT]', lastupdate_utc='[LASTUPDATE]', pagerduty_dedup='[DEDUPKEY]'
 WHERE id='[ID]'
 "@
-    $Resolve_message = "Resolved: $Hostname - $Type $Port - $Date UTC"
+    $Resolve_message = "Resolved: $Hostname $Port - $Date UTC"
     Write-Host $Resolve_message
     #$ResolveEndpoint = "$NotificationEndpoint$Resolve_message"
     #Invoke-WebRequest $ResolveEndpoint
