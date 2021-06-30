@@ -137,7 +137,7 @@ SET alert ='[ALERT]', lastupdate_utc='[LASTUPDATE]', pagerduty_dedup='[DEDUPKEY]
 WHERE id='[ID]'
 "@
     $Seperator = "::"
-    $Alert_message = "Unavailable: $Hostname$Seperator$Port [$Date UTC]"
+    $Alert_message = "$Hostname$Seperator$Port [$Date UTC]"
     Write-Host $Alert_message
     #$AlertEndpoint = "$NotificationEndpoint$Alert_message"
     #Invoke-WebRequest $AlertEndpoint
