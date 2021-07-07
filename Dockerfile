@@ -6,4 +6,5 @@ WORKDIR /powershell
 COPY opsmon.ps1 /powershell
 COPY opsquery.ps1 /powershell
 COPY add.ps1 /powershell
+COPY delete.ps1 /powershell
 CMD pwsh opsmon.ps1
