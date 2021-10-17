@@ -1,6 +1,4 @@
-param (
-    $Sleep = "true"
-    )
+while ($true) {
     
 cd $PSScriptRoot
 
@@ -187,8 +185,6 @@ WHERE id='[ID]'
     $AlertUpdate = $AlertUpdate.Replace("[DEDUPKEY]","")
     Invoke-SQLQuery -Config $Config -Query $AlertUpdate
 }
-
-if ($Sleep -eq "$true") {
 Start-Sleep -S 60
+
 }
-else {}
