@@ -185,6 +185,6 @@ WHERE id='[ID]'
     $AlertUpdate = $AlertUpdate.Replace("[DEDUPKEY]","")
     Invoke-SQLQuery -Config $Config -Query $AlertUpdate
 }
-Start-Sleep -S 60
+Start-Sleep -S $env:ENV_POLL_FREQUENCY_SECONDS
 
 }
