@@ -1,3 +1,7 @@
+param (
+    [parameter(mandatory=$false)]
+    $Id
+)
 cd $PSScriptRoot
 
 Function Invoke-SQLQuery {
@@ -28,7 +32,11 @@ Invoke-SQLQuery -Config $Config -Query $Query | Select id,hostname,port | out-fi
 rm tempquery.csv
 Write-Host " "
 
+if ($Id){}
+else {
 $ID = Read-Host "Select the service 'id' you would like to delete"
+}
+
 if ($ID) {
 $Query = "Delete FROM [TABLE] WHERE id=$ID;"
 $Query = $Query.Replace("[TABLE]","$Table")
