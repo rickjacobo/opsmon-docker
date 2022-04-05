@@ -4,12 +4,12 @@ Opsmon was built with PowerShell and uses a MySQL backend, container platform (d
 ## Requirements
 - Container Platform
 - MySql Database
-- Pager Duty
+- PagerDuty
 
-### Pager Duty
-Get Started with Pager Duty: https://support.pagerduty.com/docs/quick-start-guide
-- Log in to your Pager Duty Account
-  - Select the Pager Duty App/Service you would like to integrate with opsmon > add the "Events API V2" integration to the service. 
+### PagerDuty
+Get Started with PagerDuty: https://support.pagerduty.com/docs/quick-start-guide
+- Log in to your PagerDuty Account
+  - Select the PagerDuty App/Service you would like to integrate with opsmon > add the "Events API V2" integration to the service. 
   - Obtain the "Integration Key" from the "Events API V2" integration
 
 ## Setup
