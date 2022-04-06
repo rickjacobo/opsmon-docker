@@ -51,14 +51,15 @@ Do not populate fields with an *
 | *           | news.google.com  | tcp  | 443  |*            |*            |*            |*            |*            |
 | *           | news.google.com  | ping | ping |*            |*            |*            |*            |*            |
 
-## Add Services via CLI (Docker Example)
+
+### Add Services via CLI (Docker Example)
 ````
 docker exec -it opsmon pwsh add.ps1 -Hostname news.google.com -Type tcp -Port 443
 ````
 
-## Delete Monitored Service via CLI (Docker Example)
-### Obtain Id
+### Delete Monitored Service via CLI (Docker Example)
+#### Obtain Id
 docker exec -it opsmon pwsh opsquery.ps1
 
-## Delete Id
+### Delete Id
 docker exec -it opsmon pwsh delete.ps1 -Id <id>
