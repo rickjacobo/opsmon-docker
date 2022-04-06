@@ -19,7 +19,7 @@ Get Started with PagerDuty: https://support.pagerduty.com/docs/quick-start-guide
 docker run -d -e ENV_SQL_HOSTNAME="<hostname>" -e ENV_SQL_USERNAME="<username>" -e ENV_SQL_PASSWORD="<password>" -e ENV_SQL_DATABASE="<database>" -e ENV_SQL_TABLE="<table>" -e ENV_PAGERDUTY_ENDPOINT="https://events.pagerduty.com/v2/enqueue" -e ENV_PAGERDUTY_ROUTING_KEY="<pagerduty_routing_key>" --name opsmon rickjacobo/opsmon
 ````
 
-## Create SQL Database and Table
+### Create SQL Database and Table
 * Obtain SQL Statement
     ````
     docker exec -it opsmon cat import.sql > import.sql
@@ -32,16 +32,16 @@ docker run -d -e ENV_SQL_HOSTNAME="<hostname>" -e ENV_SQL_USERNAME="<username>" 
     mysql -u <username> -p <database> < import.sql
     ````
 
-## Add Services via CLI (Docker Example)
+### Add Services via CLI (Docker Example)
 ````
 docker exec -it opsmon pwsh add.ps1 -Hostname news.google.com -Type tcp -Port 443
 ````
 
-## Delete Monitored Service via CLI (Docker Example)
-### Obtain Id
+### Delete Monitored Service via CLI (Docker Example)
+#### Obtain Id
 docker exec -it opsmon pwsh opsquery.ps1
 
-## Delete Id
+### Delete Id
 docker exec -it opsmon pwsh delete.ps1 -Id <id>
   
 ## Services
