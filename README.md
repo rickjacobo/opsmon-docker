@@ -33,17 +33,17 @@ docker run -d -e ENV_SQL_HOSTNAME="<hostname>" -e ENV_SQL_USERNAME="<username>" 
     ````
 
   
-### Add Services to Monitor
+## Add Services to Monitor
 There are two example services in the database. When adding new services to monitor you only need to enter the hostname, type, and port. The id, status, alert, pagerduty_dedup, and lastupdate_utc fields are used by the app and don't need to be manually populated.
-#### Hostname
+### Hostname
 Enter the IP address or FQDN of the service to monitor
-#### Type
+### Type
 Enter "TCP" if you are monitoring a TCP Port or enter "ping" if you would like to perform a ping test.
   
-#### Port
+### Port
 Enter a TCP Port (ie, "443") if you are monitoring a TCP port or enter "ping" if you would like to perform a ping test.
 
-#### Example
+### Example
 Do not populate fields with an *
 
 | id          | hostname         | type | port | status | alert | pagerduty_dedup | lastupdate_utc |
