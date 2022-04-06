@@ -22,6 +22,4 @@ $Table = (Get-Content $Config | ConvertFrom-Json).table
 $Query = "SELECT * FROM [TABLE]"
 $Query = $Query.Replace("[TABLE]","$Table")
 
-#$Date = (get-date).ToUniversalTime()
-#Write-Host "Current UTC Time: $Date" -ForeGroundColor Yellow
-Invoke-SQLQuery -Config $Config -Query $Query | Select hostname,type,port,status,alert,pagerduty_dedup,lastupdate_utc | Format-Table
+Invoke-SQLQuery -Config $Config -Query $Query | Select id,hostname,type,port,status,alert,pagerduty_dedup,lastupdate_utc | Format-Table
