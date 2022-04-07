@@ -38,12 +38,12 @@ docker exec -it opsmon pwsh add.ps1 -Hostname news.google.com -Type tcp -Port 44
 ````
 
 ### Delete Monitored Service via CLI (Docker Example)
-#### Obtain Id
+* Obtain Id
   ````
   docker exec -it opsmon pwsh query.ps1
   ````
 
-#### Delete Id
+* Delete Id
   ````
   docker exec -it opsmon pwsh delete.ps1 -Id <id>
   ````
