@@ -31,6 +31,7 @@ docker run -d -e ENV_SQL_HOSTNAME="<hostname>" -e ENV_SQL_USERNAME="<username>" 
     CREATE DATABASE <database>
     mysql -u <username> -p <database> < import.sql
     ````
+    
 
 ### Add Services via CLI (Docker Example)
 ````
