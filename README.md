@@ -1,6 +1,8 @@
 # opsmon
 Opsmon was built with PowerShell and uses a MySQL backend, container platform (docker, kubernetes, etc), and Pager Duty for alerting and incident management.
 
+[![Opsmon Monitoring and Alerting with PagerDuty](https://rickjacobo.com/wp-content/uploads/2022/04/Opsmon.png)](https://rickjacobo.com/wp-content/uploads/2022/04/2022-04-25-21-12-24.mp4)
+
 ## Requirements
 - Container Platform
 - MySql Database
