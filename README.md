@@ -1,5 +1,5 @@
 # opsmon
-Opsmon is a service monitoring and alerting took built with PowerShell and uses a MySQL backend, container platform (docker, kubernetes, etc), and Pager Duty for alerting and incident management.
+Opsmon is a service monitoring and alerting tool built with PowerShell and uses a MySQL backend, container platform (docker, kubernetes, etc), and Pager Duty for alerting and incident management.
 
 [![Opsmon Monitoring and Alerting with PagerDuty](https://rickjacobo.com/wp-content/uploads/2022/04/Opsmon-1.png)](https://rickjacobo.com/wp-content/uploads/2022/04/2022-04-25-21-12-24.mp4)
 
